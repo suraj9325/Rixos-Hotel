@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+
+    <!-- Favicon -->
+    <link href="" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="booknow/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/686e1ae6ed.js" crossorigin="anonymous"></script>
+
+    <style>
+
+
+      
+        .b { float: left;}  
+        .c {float: left;}  
+        p.d { color: rgb(107, 107, 107);
+            font-size: 70px; text-align: center;
+            }     
+ 
+
+    div .right{  height: 500px; width: 600px; float: left; margin-left: 15px;}
+
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            height: 70px;
+            background: black;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+            z-index: 99;
+        }
+
+        nav .navbar {
+            height: 100%;
+            max-width: 1250px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: auto;
+            /* background: red; */
+            padding: 0 50px;
+        }
+
+        .navbar .logo a {
+            font-size: 30px;
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        nav .navbar .nav-links {
+            line-height: 70px;
+            height: 100%;
+        }
+
+        nav .navbar .links {
+            display: flex;
+        }
+
+        nav .navbar .links li {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            list-style: none;
+            padding: 0 14px;
+        }
+
+        nav .navbar .links li a {
+            height: 100%;
+            text-decoration: none;
+            white-space: nowrap;
+            color: white;
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        .links li:hover .htmlcss-arrow,
+        .links li:hover .js-arrow {
+            transform: rotate(180deg);
+        }
+
+        nav .navbar .links li .arrow {
+            /* background: red; */
+            height: 100%;
+            width: 22px;
+            line-height: 70px;
+            text-align: center;
+            display: inline-block;
+            color: white;
+            transition: all 0.3s ease;
+        }
+
+        nav .navbar .links li .sub-menu {
+            position: absolute;
+            top: 70px;
+            left: 0;
+            line-height: 40px;
+            background: black;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+            border-radius: 0 0 4px 4px;
+            display: none;
+            z-index: 2;
+        }
+
+        nav .navbar .links li:hover .htmlCss-sub-menu,
+        nav .navbar .links li:hover .js-sub-menu {
+            display: block;
+        }
+
+        .navbar .links li .sub-menu li {
+            padding: 0 22px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .navbar .links li .sub-menu a {
+            color: white;
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        .navbar .links li .sub-menu .more-arrow {
+            line-height: 40px;
+        }
+
+        .navbar .links li .htmlCss-more-sub-menu {
+            /* line-height: 40px; */
+        }
+
+        .navbar .links li .sub-menu .more-sub-menu {
+            position: absolute;
+            top: 0;
+            left: 100%;
+            border-radius: 0 4px 4px 4px;
+            z-index: 1;
+            display: none;
+        }
+
+        .links li .sub-menu .more:hover .more-sub-menu {
+            display: block;
+        }
+
+        .navbar .search-box {
+            position: relative;
+            height: 40px;
+            width: 40px;
+        }
+
+        .navbar .search-box i {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            line-height: 40px;
+            text-align: center;
+            font-size: 22px;
+            color: white;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .navbar .search-box .input-box {
+            position: absolute;
+            right: calc(100% - 40px);
+            top: 80px;
+            height: 60px;
+            width: 300px;
+            background: white;
+            border-radius: 6px;
+            opacity: 0;
+            pointer-events: none;
+            transition: all 0.4s ease;
+        }
+
+        .navbar.showInput .search-box .input-box {
+            top: 65px;
+            opacity: 1;
+            pointer-events: auto;
+            background: black;
+        }
+
+        .search-box .input-box::before {
+            content: '';
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            background: black;
+            right: 10px;
+            top: -6px;
+            transform: rotate(45deg);
+        }
+
+        .search-box .input-box input {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            border-radius: 4px;
+            transform: translate(-50%, -50%);
+            height: 35px;
+            width: 280px;
+            outline: none;
+            padding: 0 15px;
+            font-size: 16px;
+            border: none;
+        }
+
+        .navbar .nav-links .sidebar-logo {
+            display: none;
+        }
+
+        .navbar .bx-menu {
+            display: none;
+        }
+
+        @media (max-width:920px) {
+            nav .navbar {
+                max-width: 100%;
+                padding: 0 25px;
+            }
+
+            nav .navbar .logo a {
+                font-size: 27px;
+            }
+
+            nav .navbar .links li {
+                padding: 0 10px;
+                white-space: nowrap;
+            }
+
+            nav .navbar .links li a {
+                font-size: 15px;
+            }
+        }
+
+        @media (max-width:800px) {
+            nav {
+                /* position: relative; */
+            }
+
+            .navbar .bx-menu {
+                display: block;
+            }
+
+            nav .navbar .nav-links {
+                position: fixed;
+                top: 0;
+                left: -100%;
+                display: block;
+                max-width: 270px;
+                width: 100%;
+                background: black;
+                line-height: 40px;
+                padding: 20px;
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+                transition: all 0.5s ease;
+                z-index: 1000;
+            }
+
+            .navbar .nav-links .sidebar-logo {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .sidebar-logo .logo-name {
+                font-size: 25px;
+                color: white;
+            }
+
+            .sidebar-logo i,
+            .navbar .bx-menu {
+                font-size: 25px;
+                color: white;
+            }
+
+            nav .navbar .links {
+                display: block;
+                margin-top: 20px;
+            }
+
+            nav .navbar .links li .arrow {
+                line-height: 40px;
+            }
+
+            nav .navbar .links li {
+                display: block;
+            }
+
+            nav .navbar .links li .sub-menu {
+                position: relative;
+                top: 0;
+                box-shadow: none;
+                display: none;
+            }
+
+            nav .navbar .links li .sub-menu li {
+                border-bottom: none;
+            }
+
+            .navbar .links li .sub-menu .more-sub-menu {
+                display: none;
+                position: relative;
+                left: 0;
+            }
+
+            .navbar .links li .sub-menu .more-sub-menu li {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .links li:hover .htmlcss-arrow,
+            .links li:hover .js-arrow {
+                transform: rotate(0deg);
+            }
+
+            .navbar .links li .sub-menu .more-sub-menu {
+                display: none;
+            }
+
+            .navbar .links li .sub-menu .more span {
+                /* background: red; */
+                display: flex;
+                align-items: center;
+                /* justify-content: space-between; */
+            }
+
+            .links li .sub-menu .more:hover .more-sub-menu {
+                display: none;
+            }
+
+            nav .navbar .links li:hover .htmlCss-sub-menu,
+            nav .navbar .links li:hover .js-sub-menu {
+                display: none;
+            }
+
+            .navbar .nav-links.show1 .links .htmlCss-sub-menu,
+            .navbar .nav-links.show3 .links .js-sub-menu,
+            .navbar .nav-links.show2 .links .more .more-sub-menu {
+                display: block;
+            }
+
+            .navbar .nav-links.show1 .links .htmlcss-arrow,
+            .navbar .nav-links.show3 .links .js-arrow {
+                transform: rotate(180deg);
+            }
+
+            .navbar .nav-links.show2 .links .more-arrow {
+                transform: rotate(90deg);
+            }
+        }
+
+        @media (max-width:370px) {
+            nav .navbar .nav-links {
+                max-width: 100%;
+            }
+        }
+
+
+
+
+        /*Book Now*/
+        #spinner {
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity .5s ease-out, visibility 0s linear .5s;
+            z-index: 99999;
+        }
+
+        #spinner.show {
+            transition: opacity .5s ease-out, visibility 0s linear 0s;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .page-header {
+            margin-top: 10px;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .page-header-inner {
+            background: rgba(15, 23, 43, .7);
+        }
+
+        .breadcrumb-item+.breadcrumb-item::before {
+            color: var(--light);
+        }
+
+        .booking {
+            position: relative;
+            margin-top: -100px !important;
+            z-index: 1;
+        }
+
+        .btn {
+            font-weight: 500;
+            text-transform: uppercase;
+            transition: .5s;
+        }
+
+        .btn.btn-primary,
+        .btn.btn-secondary {
+            color: #FFFFFF;
+        }
+
+        .section-title {
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title::before {
+            position: absolute;
+            content: "";
+            width: 45px;
+            height: 2px;
+            top: 50%;
+            left: -55px;
+            margin-top: -1px;
+            background: var(--primary);
+        }
+
+        .section-title::after {
+            position: absolute;
+            content: "";
+            width: 45px;
+            height: 2px;
+            top: 50%;
+            right: -55px;
+            margin-top: -1px;
+            background: var(--primary);
+        }
+
+        .section-title.text-start::before,
+        .section-title.text-end::after {
+            display: none;
+        }
+
+        .section-title.text-start::before,
+        .section-title.text-end::after {
+            display: none;
+        }
+
+        .col-6:hover .rounded {
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 5px rgba(0, 0, 0, 0.22);
+            transform: translate(0px, -2px) scale(1.01);
+        }
+
+        /*** Map ***/
+        .google-map {
+            padding-bottom: 50%;
+            position: relative;
+        }
+
+        .google-map iframe {
+            height: 50%;
+            width: 50%;
+            left: 0;
+            top: 0;
+            position: absolute;
+        }
+
+
+        /* Card*/
+        .wrapper {
+            float: left;
+            width: 30%;
+            min-width: 300px;
+            background-color: #f1f1f1;
+            margin: 1.5%;
+            padding: 2em 1em;
+            box-sizing: border-box;
+            box-shadow: 0 1px 30px rgba(0, 0, 0, 0.12), 0 3px 5px rgba(0, 0, 0, 0.24);
+            text-align: center;
+        }
+
+        .wrapper>h1 {
+            font-family: "Lato", sans-serif;
+            font-weight: 200;
+            font-size: 1.5em;
+            letter-spacing: .15em;
+            color: #333;
+        }
+
+        .details {
+            width: 95%;
+            margin: 0 auto 2em;
+            padding-top: 10.5em;
+            padding-bottom: 1em;
+            background-color: #007bff;
+            color: #f8f9fa;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 5px rgba(0, 0, 0, 0.24);
+            transition: all ease-in 0.15s;
+        }
+
+        .wrapper:hover .details {
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 5px rgba(0, 0, 0, 0.22);
+            transform: translate(0px, -2px) scale(1.01);
+        }
+
+        .details>h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1em;
+        }
+
+        .details>h2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.4em;
+            font-weight: 200;
+            letter-spacing: 0.1em;
+        }
+
+        .details>p {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1em;
+            font-weight: 200;
+        }
+
+        .image {
+            position: relative;
+            z-index: 2;
+            width: 85%;
+            height: 250px;
+            margin: 0 auto -10em;
+            background-size: cover;
+            background-position: center;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 10px rgba(0, 0, 0, 0.24);
+            transition: all ease-in .15s;
+        }
+
+        .wrapper:hover .image {
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+            transform: translate(0px, -3px) scale(1.02);
+        }
+
+        .i1 {
+            background-image: url(http://d2e5ushqwiltxm.cloudfront.net/wp-content/uploads/sites/86/2018/12/18031437/deluxe-king-bed-room-cottage-at-pullman-danang-beach-resort-vietnam-5-star-hotel2.jpg);
+        }
+
+        .i2 {
+            background-image: url(https://blog.comfort-works.com/wp-content/uploads/2019/03/featured-image-1.jpg);
+        }
+
+        .i3 {
+            background-image: url(https://cache.marriott.com/marriottassets/marriott/DEDJW/dedjw-guestroom-0030-hor-clsc.jpg?interpolation=progressive-bilinear&);
+        }
+
+        @media screen and (max-width: 1000px) {
+            .wrapper {
+                width: 47%;
+            }
+        }
+
+        @media screen and(max-width:700px) {
+            .wrapper {
+                float: none;
+                width: 70%;
+                margin: 1em auto;
+            }
+        }
+
+        @media screen and(max-width:700px) {
+            .wrapper {
+                float: none;
+                width: 70%;
+                margin: 1em auto;
+            }
+        }
+
+        h2{ margin-left: 650px; margin-top: 20px; font-size: 30px;}
+
+ul.list{ list-style-type: square;}
+
+button.bt{ animation-name: bt; animation-duration: .8s; animation-timing-function: ease; animation-iteration-count: infinite;}
+
+
+
+@keyframes bt{from {color: white} to{color:black ;}}
+
+button.bt1{ animation-name: bt1; animation-duration: .8s; animation-timing-function: ease; animation-iteration-count: infinite;}
+
+
+
+@keyframes bt1{from {color: white} to{color:black ;}}
+
+
+
+
+div.gallery {
+ border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+ border: 1px solid #777;
+}
+
+div.gallery img {
+ width: 100%;
+ height: auto;
+}
+
+div.desc {
+ padding: 15px;
+ text-align: center;
+}
+
+* {
+ box-sizing: border-box;
+}
+
+.responsive {
+ padding: 0 6px;
+ float: left;
+ width: 30%;
+ margin-left: 35px;
+ box-shadow: 4px 4px 8px black;
+ background-color: rgb(226, 217, 231);
+ margin-top: 20px;
+ 
+
+
+}
+
+                                    
+
+
+@media only screen and (max-width: 700px) {
+ .responsive {
+   width: 49.99999%;
+   margin: 6px 0;
+ }
+}
+
+@media only screen and (max-width: 500px) {
+ .responsive {
+   width: 100%;
+ }
+}
+
+.clearfix:after {
+ content: "";
+ display: table;
+ clear: both;
+}
+
+p.rate{ animation-name: rate; animation-duration: 1.2s; animation-timing-function: ease; animation-iteration-count: infinite;}
+
+
+
+@keyframes rate{from {color: rgb(97, 222, 110)} to{color:yellow ;}}
+
+
+span.rate{ animation-name: rate; animation-duration: 1.2s; animation-timing-function: ease; animation-iteration-count: infinite;}
+
+
+
+@keyframes rate{from {color: rgb(97, 222, 110)} to{color:yellow ;}}
+
+
+
+.img {
+            transition: 1s ease;
+        }
+
+        img:hover {
+            -webkit-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            transform: scale(1.2);
+            transition: 1s ease;
+        }
+
+
+
+
+        /*** Footer ***/
+    </style>
+</head>
+
+<body>
+   
+        <nav>
+        <div class="navbar">
+            <i class='bx bx-menu'></i>
+            <div class="logo"><a href="#"><img src="Accomodation/rixos-hotel.jpg" width="170px" height="40px"
+                        style="margin-top: 5px;"> </a></div>
+            <div class="nav-links">
+                <div class="sidebar-logo">
+                    <span class="logo-name"></span>
+                    <i class='bx bx-x'></i>
+                </div>
+                <ul class="links">
+                    <li><a href="Hotel Home page.html">Home</a></li>
+                    <li>
+                        <a href="#">Accommodation</a>
+                        <i class='bx bxs-chevron-down js-arrow arrow '></i>
+                        <ul class="js-sub-menu sub-menu">
+                            <li><a href="Hotel Accomodation list 1.html">Deluxe Double/Twin Rooms</a></li>
+                            <li><a href="Hotel Accomodation Page 2.html">Premium Double/Twin Rooms</a></li>
+                           
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="Hotel Offers.html">Offers</a>
+                       
+                    <li>
+                    <li>
+                        <a href="#">Gallery</a>
+                        <i class='bx bxs-chevron-down js-arrow arrow '></i>
+                        <ul class="js-sub-menu sub-menu">
+                            <li><a href="Hotel Gallery 1.html">Dining Gallery</Img></a></li>
+                            <li><a href="Hotel Gallery 2.html"> Hotel Gallery</a></li>
+                           
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Dining</a>
+                        <i class='bx bxs-chevron-down js-arrow arrow '></i>
+                        <ul class="js-sub-menu sub-menu">
+                            <li><a href="Hotel Dining 1.html">All Section Dining</a></li>
+                            <li><a href="Hotel Lounge and Bar.html">Lounge and Bar</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="Hotel Meeting and Events.html">Meeting and Event</a>
+                        <i class='bx bxs-chevron-down js-arrow arrow '></i>
+                        <ul class="js-sub-menu sub-menu">
+                            <li><a href="Hotel Confarance hall.html">Conference Hall</a></li>
+                            <li><a href="Hotel Wedding.html">Wedding Hall</a></li>
+                            <li><a href="Hotel Banquat.html">Banquet hall</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Hotel About.html">About Us</a></li>
+                    <li><a href="Hotel Booknow.html"><button class="btn" style="background-color: darkviolet; color: white; ">BOOKNOW</a></button>
+                    </li>
+                </ul>
+            </div>
+          
+           
+    </nav>
+    <script src="booknow (2)/js.js"></script>
+
+
+
+    <div><img src="Accomodation/Accomodation.jpg" height="450px" width="100%"></div>
+
+    <h1 style="font-size: 33px; margin-top: 60px; font-weight: bold; margin-left: 160px;">DELUXE DOUBLE/TWIN ROOMS</h1>
+    <p style="margin-left: 160px;">The suites have an exquisitely appointed bedroom and an adjoining living room. The Deluxe rooms have sloping roofs and wooden walls showcasing the design elements<br> that surrounded royalty of yore. These rooms are elegantly appointed with Burma teak flooring and have king beds. The bathrooms include a vanity counter, a bathtub and<br> come with Elgin designer toiletries.</p>
+     
+        <div style="background-color: rgb(226, 217, 231); height: 480px; width: 1400px; margin-left: auto; 
+                              margin-right: auto; margin-top: 20px; box-shadow: 2px 2px black;
+                                                                     "  >
+       
+         <div class="right"><div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+            <div class="carousel-inner"  style="margin-top: 15px; margin-right: 35px;">
+              <div class="carousel-item active">
+                <img src="Accomodation/Deluxtwin-room.jpg"  height="450px" width="650px" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="Accomodation/Special Room.jpg"  height="450px" width="650px" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="Accomodation/deluxe_queen_990x590.jpg"  height="450px" width="650px" class="d-block w-100" alt="...">
+              </div>
+            </div>
+          
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>  </div>  <div><br><h2 style="font-weight: bold; margin-bottom: 25px;">Room features</h2>
+            
+          
+            <ul class="list">
+            <li style="font-size: 17px; list-style-type: disc; text-shadow: 2px 2px 8px black; margin-left: 630px;"><i class="fa-solid fa-tv" style="font-size: 20px;"></i><b>&nbsp;&nbsp;32 inch Sony LCD Television & Satellite Television</b></li><br>
+            <li style="font-size: 17px; list-style-type: disc;text-shadow: 4px 4px 8px black; margin-left: 630px;"><i class="fa-solid fa-bath"style="font-size: 20px;"></i>&nbsp;&nbsp;<b>Direct dial telephone in bedroom & bathroom</b></li><br>
+            <li style="font-size: 17px; list-style-type: disc;text-shadow: 2px 2px 8px black;margin-left: 630px;" ><i class="fa-solid fa-wifi"style="font-size: 20px;"></i>&nbsp;&nbsp;<b>Free wireless internet in all bedrooms</b></li><br>
+            <li style="font-size: 17px; list-style-type: disc;text-shadow: 4px 4px 8px black;margin-left: 630px;" ><i class="fa-solid fa-bed"style="font-size: 20px;"></i>&nbsp;&nbsp;<b>Attached private bath with shower,& bath slippers</b></li><br>
+         
+            <li style="font-size: 17px; list-style-type: disc;text-shadow: 4px 4px 8px black;margin-left: 630px; "><b>Fireplaces on request in selective rooms</b></li><br>
+            <span class="rate"  style="font-size: 22px; list-style-type: disc;text-shadow: 4px 4px 8px black; margin-left: 540px;"><b>30,000 INR per night</span></b><br>
+            <br><li><a href="Hotel Booknow.html"><button class="bt" style="background-color: darkviolet; color: white; font-weight: bold; font-size: 20px; border-style: none; width: 150px; height: 35px; border-radius: 5px; box-shadow: 4px 4px black; margin-left: 600px;">BOOKNOW</button></a></li>
+            </ul> 
+    </div>
+</div>
+
+      </div>
+    
+   <br>
+
+   <h1 style="text-align: center; font-weight: bold;">Accommodation  Rooms</h1>
+
+ 
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Accomodation/Superioer Rooms.jpg">
+      <img src="Accomodation/Superioer Rooms.jpg" alt="Cinque Terre" width="600" height="400">
+    </a>
+  </div>
+    <div class="desc"><p style="font-size: 28px; font-weight: bold;">Superior Room Twin Bed</p>
+      Styled as urban studios, our Superior Rooms are ideal for single travellers. Features and amenities include Queen or Twin platform beds with
+      luxuriously upholstered headboard walls, wooden floors, custom rugs, LED TV, mini bar, tea/coffee maker, ironing kit, inclusive of WiFi and 
+      access to the fitness center, pool and spa. The well-appointed bathroom has a walk-in shower cubicle and premium bath amenities. 
+      Impeccable in-room dining and housekeeping services promise a smooth and stress-free stay.<br><br>
+      <i class="fa-solid fa-tv" style="font-size: 27px;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-bath"style="font-size: 27px;">&nbsp;&nbsp;&nbsp;&nbsp;
+      </i><i class="fa-solid fa-wifi"style="font-size: 27px;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-bed"style="font-size: 27px;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-person-swimming"style="font-size: 30px;" ></i>
+ <br><br>
+      <p class="rate" style="margin-left: 200px; font-size: 22px; text-shadow: 4px 4px 8px black; font-weight: bold;">27,000 INR per night </p>
+      <span><a href="Hotel Booknow.html"><button class="bt" style="background-color: darkviolet; color: white; font-weight: bold; font-size: 20px; border-style: none; width: 150px; height: 35px; border-radius: 5px; box-shadow: 4px 4px black; margin-left: 250px;">BOOKNOW</button></a></span>
+         
+      
+
+
+
+</div>
+ 
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Accomodation/Accomodation Supiries Queen Bed.jpg">
+      <img src="Accomodation/Accomodation Supiries Queen Bed.jpg" alt="Forest" width="600" height="400">
+    </a>
+  </div>
+
+    <div class="desc"><p style="font-size: 28px; font-weight: bold;">Superior Room Queen Bed</p>
+
+      Styled as urban studios, our Superior Rooms are ideal for single travellers. Features and amenities include Queen or Twin platform beds with luxuriously upholstered headboard walls, wooden floors, custom rugs, LED TV, mini bar, tea/coffee maker, ironing kit, Inclusive of WiFi and access to the fitness center, pool and spa. The well-appointed bathroom has a walk-in shower cubicle and premium bath amenities. Impeccable in-room dining and housekeeping services promise a smooth and stress-free stay.<br><br>
+    
+      <i class="fa-solid fa-tv" style="font-size: 27px;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-bath"style="font-size: 27px;">&nbsp;&nbsp;&nbsp;&nbsp;
+      </i><i class="fa-solid fa-wifi"style="font-size: 27px;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-bed"style="font-size: 27px;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-person-swimming"style="font-size: 30px;" ></i>
+ <br><br>
+      <p class="rate"   style="margin-left: 200px; font-size: 22px; text-shadow: 4px 4px 8px black; font-weight: bold;">25,000 INR per night </p>
+      <span><a href="Hotel Booknow.html"><button class="bt" style="background-color: darkviolet; color: white; font-weight: bold; font-size: 20px; border-style: none; width: 150px; height: 35px; border-radius: 5px; box-shadow: 4px 4px black; margin-left: 250px;">BOOKNOW</button></a></span>
+    
+      
+    
+    
+    
+    
+    
+    
+    
+    
+    </div>
+  
+</div>
+
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Accomodation/1444575.jpg">
+      <img src="Accomodation/1444575.jpg" alt="Mountains" width="600" height="400">
+    </a>
+  </div>
+
+    <div class="desc">
+
+      <p style="font-size: 28px; font-weight: bold;">Premium Room Queen Bed</p>
+
+      Styled as urban studios, our Superior Rooms are ideal for single travellers. Features and amenities include Queen or Twin platform beds with luxuriously upholstered headboard walls, wooden floors, custom rugs, LED TV, mini bar, tea/coffee maker, ironing kit, Inclusive of WiFi and access to the fitness center, pool and spa. The well-appointed bathroom has a walk-in shower cubicle and premium bath amenities. Impeccable in-room dining and housekeeping services promise a smooth and stress-free stay.<br><br>
+    
+      <i class="fa-solid fa-tv" style="font-size: 27px;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-bath"style="font-size: 27px;">&nbsp;&nbsp;&nbsp;&nbsp;
+      </i><i class="fa-solid fa-wifi"style="font-size: 27px;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-bed"style="font-size: 27px;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-person-swimming"style="font-size: 30px;" ></i>
+ <br><br>
+      <p class="rate"   style="margin-left: 200px; font-size: 22px; text-shadow: 4px 4px 8px black; font-weight: bold;">23,000 INR per night </p>
+    
+      <span><a href="Hotel Booknow.html"><button class="bt" style="background-color: darkviolet; color: white; font-weight: bold; font-size: 20px; border-style: none; width: 150px; height: 35px; border-radius: 5px; box-shadow: 4px 4px black; margin-left: 250px;">BOOKNOW</button></a></span>
+    
+
+
+
+
+
+
+    </div>
+  
+</div>
+
+
+
+
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+<br><br><br>
+
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Accomodation/Accomodation list 1Family-Triple-Room-1.jpg">
+      <img src="Accomodation/Accomodation list 1Family-Triple-Room-1.jpg" alt="Cinque Terre" width="600" height="400">
+    </a>
+  </div>
+    <div class="desc"><p style="font-size: 28px; font-weight: bold;">Triple Room</p>
+      Styled as urban studios, our Superior Rooms are ideal for single travellers. Features and amenities include Queen or Twin platform beds with
+      luxuriously upholstered headboard walls, wooden floors, custom rugs, LED TV, mini bar, tea/coffee maker, ironing kit, inclusive of WiFi and 
+      access to the fitness center, pool and spa. The well-appointed bathroom has a walk-in shower cubicle and premium bath amenities. 
+      Impeccable in-room dining and housekeeping services promise a smooth and stress-free stay.<br><br>
+      <i class="fa-solid fa-tv" style="font-size: 27px;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-bath"style="font-size: 27px;">&nbsp;&nbsp;&nbsp;&nbsp;
+      </i><i class="fa-solid fa-wifi"style="font-size: 27px;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-bed"style="font-size: 27px;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-person-swimming"style="font-size: 30px;" ></i>
+ <br><br>
+      <p   class="rate"  style="margin-left: 200px; font-size: 22px; text-shadow: 4px 4px 8px black; font-weight: bold;">37,000 INR per night </p>
+      <span><a href="Hotel Booknow.html"><button class="bt" style="background-color: darkviolet; color: white; font-weight: bold; font-size: 20px; border-style: none; width: 150px; height: 35px; border-radius: 5px; box-shadow: 4px 4px black; margin-left: 250px;">BOOKNOW</button></a></span>
+    
+
+
+</div>
+ 
+</div>
+<br><br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Accomodation/Accomodation List 1 Interconecting room.jpg">
+      <img src="Accomodation/Accomodation List 1 Interconecting room.jpg" alt="Forest" width="600" height="500">
+    </a>
+  </div>
+
+    <div class="desc"><p style="font-size: 28px; font-weight: bold;">Interconnecting Room</p>
+
+      Styled as urban studios, our Superior Rooms are ideal for single travellers. Features and amenities include Queen or Twin platform beds with luxuriously upholstered headboard walls, wooden floors, custom rugs, LED TV, mini bar, tea/coffee maker, ironing kit, Inclusive of WiFi and access to the fitness center, pool and spa. The well-appointed bathroom has a walk-in shower cubicle and premium bath amenities. Impeccable in-room dining and housekeeping services promise a smooth and stress-free stay.<br><br>
+    
+      <i class="fa-solid fa-tv" style="font-size: 27px;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-bath"style="font-size: 27px;">&nbsp;&nbsp;&nbsp;&nbsp;
+      </i><i class="fa-solid fa-wifi"style="font-size: 27px;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-bed"style="font-size: 27px;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-person-swimming"style="font-size: 30px;" ></i>
+ <br><br>
+      <p  class="rate" style="margin-left: 200px; font-size: 22px; text-shadow: 4px 4px 8px black; font-weight: bold;">20,000 INR per night </p>
+      <span><a href="Hotel Booknow.html"><button class="bt" style="background-color: darkviolet; color: white; font-weight: bold; font-size: 20px; border-style: none; width: 150px; height: 35px; border-radius: 5px; box-shadow: 4px 4px black; margin-left: 250px;">BOOKNOW</button></a></span>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </div>
+  
+</div>
+<br><br><br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Accomodation/Accomodation list 1 parlour-room.jpg">
+      <img src="Accomodation/Accomodation list 1 parlour-room.jpg" alt="Mountains" width="600" height="400">
+    </a>
+  </div>
+
+    <div class="desc">
+
+      <p style="font-size: 28px; font-weight: bold;">Parlour Room</p>
+
+      Styled as urban studios, our Superior Rooms are ideal for single travellers. Features and amenities include Queen or Twin platform beds with luxuriously upholstered headboard walls, wooden floors, custom rugs, LED TV, mini bar, tea/coffee maker, ironing kit, Inclusive of WiFi and access to the fitness center, pool and spa. The well-appointed bathroom has a walk-in shower cubicle and premium bath amenities. Impeccable in-room dining and housekeeping services promise a smooth and stress-free stay.<br><br>
+    
+      <i class="fa-solid fa-tv" style="font-size: 27px;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-bath"style="font-size: 27px;">&nbsp;&nbsp;&nbsp;&nbsp;
+      </i><i class="fa-solid fa-wifi"style="font-size: 27px;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-bed"style="font-size: 27px;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-person-swimming"style="font-size: 30px;" ></i>
+ <br><br>
+      <p  class="rate" style="margin-left: 200px; font-size: 22px; text-shadow: 4px 4px 8px black; font-weight: bold;">18,000 INR per night </p>
+      
+      <span><a href="Hotel Booknow.html"><button class="bt" style="background-color: darkviolet; color: white; font-weight: bold; font-size: 20px; border-style: none; width: 150px; height: 35px; border-radius: 5px; box-shadow: 4px 4px black; margin-left: 250px;">BOOKNOW</button></a></span>
+    
+
+
+
+
+
+
+
+    </div>
+  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="clearfix"></div>
+
+<br><br>
+
+
+
+    
+   
+
+
+
+
+
+
+    <!-- Template Javascript -->
+    <script src="booknow/booknow/main.js"></script>
+</body>
+
+</html>
